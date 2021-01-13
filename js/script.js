@@ -1,12 +1,17 @@
+  
 $(document).ready(function(){
   
   $('.menu ul li').mouseover(function(){
-    $(this).find('ul').css("display","inline-block");
+    $(this).find('>ul').stop(true).slideDown();
 
   });
   $('.menu ul li').mouseout(function(){
-    $(this).find('ul').css("display","none");
+    $(this).find('>ul').slideUp();
 
   });
+  $('.menu ul li').click(function(){
+    $('.menu ul li.active').removeClass("active");
+    $(this).addClass("active");
 
+  });
 });

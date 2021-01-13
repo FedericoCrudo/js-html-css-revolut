@@ -36,6 +36,7 @@ nav img{
 .menu > ul li{
     display: inline-block;
     position: relative;
+    cursor: pointer;
     
 }
 .menu > ul >li> i{

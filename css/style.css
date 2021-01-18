@@ -41,7 +41,6 @@ nav img{
 }
 .menu > ul >li> i{
     cursor: pointer;
-    vertical-align: middle;
     font-size: 13px;
 
 }
